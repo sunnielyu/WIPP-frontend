@@ -50,6 +50,7 @@ export class PyramidVisualizationDetailComponent implements OnInit, OnDestroy {
     }
     this.manifest = this.visualization.manifest;
     const self = this;
+    console.log(this.manifest);
 
     this.layersGroups = this.manifest.layersGroups.map(function (group) {
       return {
