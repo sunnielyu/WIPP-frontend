@@ -143,6 +143,7 @@ export class PyramidService implements DataService<Pyramid, PaginatedPyramid> {
           return firstTimeSlice;
         }),
         map( data => {
+            console.log(manifest);
           return manifest;
         }));
   }
